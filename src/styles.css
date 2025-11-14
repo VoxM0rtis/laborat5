@@ -1,0 +1,148 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+:root[data-theme='light'] {
+  --bg: #ffffff;
+  --text: #213547;
+  --card-bg: #f4f4f5;
+  --card-border: #d4d4d8;
+  --link: #1d4ed8;
+  --link-hover: #1e40af;
+  --header-bg: #f3f4f6;
+  --header-text: #111827;
+  --footer-bg: #f3f4f6;
+  --footer-text: #374151;
+  --nav-bg: #e5e7eb;
+  --menu-bg: #e5e7eb;
+  --menu-text: #111827;
+  --menu-border: #c7cdd4;
+  --menu-active-bg: #c7d2fe;
+  --menu-active-text: #111827;
+  --btn-text: #111827;
+  --btn-border: #c7cdd4;
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --secondary: #6b7280;
+  --secondary-hover: #4b5563;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --card-bg: #111827;
+  --card-border: #374151;
+  --link: #93c5fd;
+  --link-hover: #bfdbfe;
+  --header-bg: #111827;
+  --header-text: #e5e7eb;
+  --footer-bg: #111827;
+  --footer-text: #cbd5e1;
+  --nav-bg: #0b1220;
+  --menu-bg: #1f2937;
+  --menu-text: #e5e7eb;
+  --menu-border: #374151;
+  --menu-active-bg: #374151;
+  --menu-active-text: #ffffff;
+  --btn-text: #e5e7eb;
+  --btn-border: #374151;
+  --primary: #60a5fa;
+  --primary-hover: #93c5fd;
+  --secondary: #6b7280;
+  --secondary-hover: #9ca3af;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  font-weight: 500;
+  color: var(--link);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--link-hover);
+}
+
+.button {
+  padding: 10px 20px;
+  border: 1px solid var(--btn-border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  color: var(--btn-text);
+}
+
+.button--primary {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.button--secondary {
+  background-color: var(--secondary);
+  color: #ffffff;
+}
+
+.button--secondary:hover {
+  background-color: var(--secondary-hover);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+}
+
+.navigation {
+  background-color: var(--nav-bg);
+  padding: 10px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav-list li {
+  display: inline-block;
+}
+
+.lab4-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--text);
+}
